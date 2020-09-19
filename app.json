@@ -1,6 +1,6 @@
 {
     "name": "Django sample app",
     "description": "A simple REST application using Django 3",
-    "repository": "https://github.com/wjfatuan/simple-api",
+    "repository": "https://github.com/wjfatuan/django-api",
     "keywords": ["django", "python", "api"]
 }
