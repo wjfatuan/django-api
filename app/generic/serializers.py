@@ -8,3 +8,5 @@ class DataSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Data
         fields = ['id','name', 'data']
+    
+    data = serializers.JSONField()
