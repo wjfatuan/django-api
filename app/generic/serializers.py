@@ -1,12 +1,15 @@
-from django.urls import path, include
-from rest_framework import routers, serializers, viewsets
+from rest_framework import serializers
 
 from .models import Data
 
-# Serializers define the API representation.
+
 class DataSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
+        """
+        Defining model and fields to be displayes when the serializer is 
+        called.
+        """
         model = Data
-        fields = ['id','name', 'data']
-    
+        fields = ['id', 'name', 'data']
+
     data = serializers.JSONField()
