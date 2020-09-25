@@ -5,10 +5,7 @@ from .models import Data
 
 class DataSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        """
-        Defining model and fields to be displayes when the serializer is 
-        called.
-        """
+        """Serializer fields."""
         model = Data
         fields = ['id', 'name', 'data']
 
