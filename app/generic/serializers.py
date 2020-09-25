@@ -9,6 +9,7 @@ class DataSerializer(serializers.HyperlinkedModelSerializer):
 
         Defines the fields to show when the serializer is used.
         """
+
         model = Data
         fields = ['id', 'name', 'data']
 
