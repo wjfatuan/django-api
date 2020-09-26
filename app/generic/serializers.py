@@ -5,7 +5,6 @@ from .models import Data
 
 class DataSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        
         """
         Serializer fields."""
 
