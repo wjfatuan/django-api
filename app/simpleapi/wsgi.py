@@ -1,5 +1,4 @@
-"""
-WSGI config for simpleapi project.
+"""WSGI config for simpleapi project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

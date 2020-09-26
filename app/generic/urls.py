@@ -1,11 +1,7 @@
-from django.shortcuts import render
-
 # Create your views here.
 from django.urls import path, include
 from rest_framework import routers
 
-from .models import Data
-from .serializers import DataSerializer
 from .views import DataViewSet
 
 # Routers provide an easy way of automatically determining the URL conf.

@@ -1,5 +1,4 @@
-"""
-ASGI config for simpleapi project.
+"""ASGI config for simpleapi project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
