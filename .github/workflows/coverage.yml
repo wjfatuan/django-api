@@ -20,9 +20,9 @@ jobs:
       run: |
         pip install pipenv
         pipenv install
+        pipenv shell
     - name: Test with pytest
       run: |
-        pipenv shell
         cd app
         coverage run -m pytest
         coverage xml
