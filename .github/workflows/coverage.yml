@@ -20,12 +20,11 @@ jobs:
       run: |
         pip install pipenv
         pipenv install
-        pipenv shell
     - name: Test with pytest
       run: |
         cd app
-        coverage run -m pytest
-        coverage xml
+        pipenv run coverage run -m pytest
+        pipenv run coverage xml
     - name: Run codacy-coverage-reporter
       uses: codacy/codacy-coverage-reporter-action@master
       with:
