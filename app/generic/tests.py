@@ -16,7 +16,7 @@ class GenericConfigTest(TestCase):
 class DataTest(TestCase):
 
     @staticmethod
-    def create_data(name="TEST", data="\{'description':'Test data'\}"):
+    def create_data(name="TEST", data=r"\{'description':'Test data'\}"):
         return Data.objects.create(name=name, data=data)
 
     def test_create_data(self):
