@@ -1,12 +1,11 @@
 from django.test import TestCase
 from django.apps import apps
 from django.urls import reverse
-from rest_framework.test import APIRequestFactory
 from rest_framework.test import APITestCase
 from rest_framework import status
 
-from .apps import *
-from .models import *
+from .apps import GenericConfig
+from .models import Data
 
 class GenericConfigTest(TestCase):
     def test_app(self):
@@ -16,7 +15,8 @@ class GenericConfigTest(TestCase):
 
 class DataTest(TestCase):
 
-    def create_data(self, name="TEST", data="\{'description':'Test data'\}"):
+    @staticmethod
+    def create_data(name="TEST", data="\{'description':'Test data'\}"):
         return Data.objects.create(name=name, data=data)
 
     def test_create_data(self):
