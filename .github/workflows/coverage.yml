@@ -18,9 +18,11 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
+        pip install pipenv
         pipenv install
     - name: Test with pytest
       run: |
+        pipenv shell
         cd app
         coverage run -m pytest
         coverage xml
